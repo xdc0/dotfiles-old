@@ -1,3 +1,5 @@
+# -*- sh -*-
+
 servers = (
   { address = "eu.irc6.net"; chatnet = "IRCnet"; port = "6667"; },
   { address = "open.ircnet.net"; chatnet = "IRCnet"; port = "6667"; },
@@ -166,15 +168,15 @@ statusbar = {
     topicbarend = "{topicsbend}";
 
     # treated "normally", you could change the time/user name to whatever
-    time = "{sb $Z}";
-    user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}}";
+    time = "{sb $Z} ";
+    user = "{sb {sbnickmode $cumode}$N{sbmode $usermode}{sbaway $A}} ";
 
     # treated specially .. window is printed with non-empty windows,
     # window_empty is printed with empty windows
     window = "{sb $winref:$tag/$itemname{sbmode $M}}";
     window_empty = "{sb $winref{sbservertag $tag}}";
-    prompt = "{prompt $[.15]itemname}";
-    prompt_empty = "{prompt $winname}";
+    prompt = "{prompt $[.15]itemname}~ ";
+    prompt_empty = "{prompt $winname}~ ";
     topic = " $topic";
     topic_empty = " Irssi v$J - http://www.irssi.org";
 
@@ -191,7 +193,7 @@ statusbar = {
     # the "default statusbar" to be displayed at the bottom of the window.
     # contains all the normal items.
     window = {
-      disabled = "no";
+      #disabled = "no";
 
       # window, root
       type = "window";
@@ -263,9 +265,10 @@ statusbar = {
   };
 };
 settings = {
-  core = { real_name = ""; user_name = "chuy"; nick = "chuy"; };
+  core = { real_name = "Xavier"; user_name = "xmad"; nick = "xmad"; };
   "fe-text" = { actlist_sort = "refnum"; };
-  "fe-common/core" = {
-      theme = "envy.theme";
-  }
+  "fe-common/core" = { theme = "default.theme"; };
 };
+ignores = (
+  { level = "JOINS PARTS QUITS"; channels = ( "#archlinux" ); }
+);

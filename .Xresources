@@ -1,7 +1,7 @@
 !! Pseudo Transparency:
 !
-#urxvt*transparent: true
-#urxvt*shading: 10
+!urxvt*transparent: true
+!urxvt*shading: 10
 
 
 !! Real Transparency:
@@ -11,14 +11,14 @@ URxvt.depth: 32
 URxvt.background: rgba:1111/1111/1111/eeee
 
 !! Fonts
-URxvt.font: xft:Dina:pixelsize=16:antialias=false:hinting=true
-URxvt.boldFont:	xft:Dina:pixelsize=16:antialias=false:bold:hinting=true
-URxvt.italicFont: xft:Dina:pixelsize=16:antialias=false:italic:autohint=true:hinting=true
-URxvt.bolditalicFont: xft:Dina:pixelsize=16:antialias=false:bold:italic:autohint=true:hinting=true
+URxvt.font: xft:Monaco:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont:	xft:Monaco:pixelsize=14:antialias=true:bold:autohint=true:hinting=true
+URxvt.italicFont: xft:Monaco:pixelsize=14:antialias=true:italic:autohint=true:hinting=true
+URxvt.bolditalicFont: xft:Monaco:pixelsize=14:antialias=true:bold:italic:autohint=true:hinting=true
 
 ! terminal colors ------------------------------------------------------------
-#*background:  #111111
-#*foreground:  #d4d4d4
+!*background:  #111111
+!*foreground:  #d4d4d4
 *background:  black
 *foreground:  white
 

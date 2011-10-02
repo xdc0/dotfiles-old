@@ -1,0 +1,19 @@
+Config { font = "-*-terminus-medium-*-*-*-12-120-75-75-*-*-iso8859-*"
+       , bgColor = "black"
+       , border = NoBorder
+       , borderColor = "#4c5e52"
+       , fgColor = "grey"
+       , lowerOnStart = True
+       , position = TopW L 100
+       , commands = [ Run Weather "MMHO" ["-t","<skyCondition> <tempC>C"] 3000
+                    , Run Cpu ["-t","<total>%"] 30
+                    , Run Memory ["-t","<usedratio>%"] 30
+                    , Run Network "eth0" ["-t","<rx>kb/s | <tx>kb/s"] 30
+                    , Run Date "%b %_d %R" "date" 40
+--                    , Run Com "cputemp" "" 30
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ CPU: <fc=white>%cpu%</fc> | Mem: <fc=white>%memory%</fc> <fc=green>|||</fc> Net: <fc=white>%eth0%</fc> <fc=green> ||| </fc> Weather: <fc=white>%MMHO%</fc> | <fc=lightblue>%date%</fc> | %cputemp%"
+       }
