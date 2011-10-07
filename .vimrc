@@ -1,7 +1,6 @@
 syntax on
 set background=dark
 let g:solarized_termcolors=256
-colorscheme solarized
 set number
 set smartindent
 set tabstop=4

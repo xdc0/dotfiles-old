@@ -18,6 +18,7 @@ main = do
     dzenWS <- spawnPipe mydzenWSbar
     dzenMIN <- spawnPipe myMonitor
     dzenBRight <- spawnPipe myBRight
+    dzenBLeft <- spawnPipe myBLeft
 
     xmonad $ defaultConfig
         { manageHook = manageDocks <+> manageHook defaultConfig
@@ -39,7 +40,8 @@ main = do
 
 mydzenWSbar = "dzen2 -x '0' -y '0' -w '540' -ta 'l' -bg '" ++ myDBGColor ++ "' -fn '" ++ myFont ++ "'"
 myMonitor = "conky | dzen2 -x '520' -y '0' -w '846' -ta 'r' -bg 'black' -fn '" ++ myFont ++ "'"
-myBRight = "~/.dzen/scripts/bottomRight.zsh | dzen2 -x 0 -y 750 -ta 'r' -h 18 -bg 'black' -fn '" ++ myFont ++ "'"
+myBRight = "~/.dzen/scripts/bottomRight.zsh | dzen2 -x 683 -y 750 -w 683 -ta 'r' -h 18 -bg 'black' -fn '" ++ myFont ++ "'"
+myBLeft = "~/.dzen/scripts/bottomLeft.zsh | dzen2 -x 0 -y 750 -w 683 -ta 'l' -h 18 -bg 'black' -fn '" ++ myFont ++ "'"
 myFont = "-*-terminus-medium-*-*-*-12-120-75-75-*-*-iso8859-*"
 myDFGColor = "#ffffff" -- Dzen
 myDBGColor = "#000000"

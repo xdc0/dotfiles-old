@@ -1,0 +1,52 @@
+!! Pseudo Transparency:
+!
+!urxvt*transparent: true
+!urxvt*shading: 10
+
+
+!! Real Transparency:
+
+URxvt.scrollBar: false
+URxvt.depth: 32
+URxvt.background: rgba:1111/1111/1111/eeee
+
+!! Fonts
+URxvt.font: xft:Monaco:pixelsize=14:antialias=true:hinting=true
+URxvt.boldFont:	xft:Monaco:pixelsize=14:antialias=true:bold:autohint=true:hinting=true
+URxvt.italicFont: xft:Monaco:pixelsize=14:antialias=true:italic:autohint=true:hinting=true
+URxvt.bolditalicFont: xft:Monaco:pixelsize=14:antialias=true:bold:italic:autohint=true:hinting=true
+
+! terminal colors ------------------------------------------------------------
+!*background:  #111111
+!*foreground:  #d4d4d4
+*background:  black
+*foreground:  white
+
+!black
+*color0: #191919
+*color8: #505050
+!red
+*color1: #e9003c
+*color9: #ff3c6e
+!green
+*color2: #9ace00
+*color10: #d7f822
+!yellow
+*color3: #ffcc00
+!ffa000
+*color11: #ffd45f
+!f8cf76
+!blue
+*color4: #12aed5
+*color12: #82d0e3
+!magenta
+*color5: #ba823c
+!e12289
+*color13: #ba9669
+!c869aa
+!cyan
+*color6: #5E7175
+*color14: #A3BABF
+!white
+*color7: #d4d4d4
+*color15: #ffffff
