@@ -11,10 +11,10 @@ URxvt.depth: 32
 URxvt.background: rgba:1111/1111/1111/eeee
 
 !! Fonts
-URxvt.font: xft:Monaco:pixelsize=14:antialias=true:hinting=true
-URxvt.boldFont:	xft:Monaco:pixelsize=14:antialias=true:bold:autohint=true:hinting=true
-URxvt.italicFont: xft:Monaco:pixelsize=14:antialias=true:italic:autohint=true:hinting=true
-URxvt.bolditalicFont: xft:Monaco:pixelsize=14:antialias=true:bold:italic:autohint=true:hinting=true
+URxvt.font: xft:Monaco:pixelsize=12:antialias=true:hinting=true
+URxvt.boldFont:	xft:Monaco:pixelsize=12:antialias=true:bold:autohint=true:hinting=true
+URxvt.italicFont: xft:Monaco:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
+URxvt.bolditalicFont: xft:Monaco:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
 
 ! terminal colors ------------------------------------------------------------
 !*background:  #111111
