@@ -23,3 +23,5 @@ PROMPT="[%n@%m %1~]%# "
 #######
 
 alias ls='ls --color=auto'
+alias zf='/opt/zendframework/bin/zf.sh'
+alias tmux="TERM=screen-256color-bce tmux"

@@ -2,6 +2,8 @@
 !
 !urxvt*transparent: true
 !urxvt*shading: 10
+!
+URxvt.termName: rxvt-256color
 
 
 !! Real Transparency:
@@ -11,42 +13,45 @@ URxvt.depth: 32
 URxvt.background: rgba:1111/1111/1111/eeee
 
 !! Fonts
-URxvt.font: xft:Monaco:pixelsize=12:antialias=true:hinting=true
-URxvt.boldFont:	xft:Monaco:pixelsize=12:antialias=true:bold:autohint=true:hinting=true
-URxvt.italicFont: xft:Monaco:pixelsize=12:antialias=true:italic:autohint=true:hinting=true
-URxvt.bolditalicFont: xft:Monaco:pixelsize=12:antialias=true:bold:italic:autohint=true:hinting=true
+URxvt.font: -*-dina-medium-r-*-*-13-*-*-*-*-*-*-*
+URxvt.boldFont:	-*-dina-bold-r-*-*-13-*-*-*-*-*-*-*
+URxvt.italicFont: -*-dina-medium-i-*-*-13-*-*-*-*-*-*-*
+URxvt.bolditalicFont: -*-dina-bold-i-*-*-13-*-*-*-*-*-*-*
+
+!! Some Settings
+
+URxvt.perl-ext:      default,url-select
+URxvt.keysym.M-u:    perl:url-select:select_next
+URxvt.urlLauncher:   firefox
+URxvt.underlineURLs: true
 
 ! terminal colors ------------------------------------------------------------
 !*background:  #111111
 !*foreground:  #d4d4d4
-*background:  black
-*foreground:  white
+!*background:  black
+URxvt*foreground:  white
 
 !black
-*color0: #191919
-*color8: #505050
+URxvt*color0: #191919
+URxvt*color8: #505050
 !red
-*color1: #e9003c
-*color9: #ff3c6e
+URxvt*color1: #e9003c
+URxvt*color9: #ff3c6e
 !green
-*color2: #9ace00
-*color10: #d7f822
+URxvt*color2: #9ace00
+URxvt*color10: #d7f822
 !yellow
-*color3: #ffcc00
-!ffa000
-*color11: #ffd45f
-!f8cf76
+URxvt*color3: #ffcc00
+URxvt*color11: #ffd45f
 !blue
-*color4: #12aed5
-*color12: #82d0e3
+URxvt*color4: #12aed5
+URxvt*color12: #82d0e3
 !magenta
-*color5: #ba823c
-!e12289
-*color13: #ba9669
-!c869aa
+URxvt*color5: #ba823c
+URxvt*color13: #ba9669
 !cyan
-*color6: #5E7175
-*color14: #A3BABF
+URxvt*color6: #5E7175
+URxvt*color14: #A3BABF
 !white
-*color7: #d4d4d4
-*color15: #ffffff
+URxvt*color7: #d4d4d4
+URxvt*color15: #ffffff
