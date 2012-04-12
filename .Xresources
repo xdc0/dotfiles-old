@@ -1,19 +1,19 @@
 !! Pseudo Transparency:
 !
 !urxvt*transparent: true
-!urxvt*shading: 10
+!urxvt*shading: 15
 !
-URxvt.termName: rxvt-256color
-
+URxvt.termName: rxvt-unicode-256color
+URxvt.scrollBar: false
 
 !! Real Transparency:
 
-URxvt.scrollBar: false
 URxvt.depth: 32
-URxvt.background: rgba:1111/1111/1111/eeee
+URxvt.background: rgba:1111/1111/1111/cccc
 
 !! Fonts
-URxvt.font: -*-dina-medium-r-*-*-13-*-*-*-*-*-*-*
+!URxvt.font: -*-dina-medium-r-*-*-13-*-*-*-*-*-*-*
+URxvt.font: -*-erusfont-medium-*-*-*-11-*-*-*-*-*-*-*
 URxvt.boldFont:	-*-dina-bold-r-*-*-13-*-*-*-*-*-*-*
 URxvt.italicFont: -*-dina-medium-i-*-*-13-*-*-*-*-*-*-*
 URxvt.bolditalicFont: -*-dina-bold-i-*-*-13-*-*-*-*-*-*-*
@@ -28,7 +28,7 @@ URxvt.underlineURLs: true
 ! terminal colors ------------------------------------------------------------
 !*background:  #111111
 !*foreground:  #d4d4d4
-!*background:  black
+URxvt*background:  black
 URxvt*foreground:  white
 
 !black
